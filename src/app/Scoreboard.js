@@ -19,12 +19,13 @@ export default function Scoreboard() {
   function handleFirstNameChange(e) {
     setPlayer({
       ...player,
-      firstName: e.target.value,
+      firstName: e.target.value
     });
   }
 
   function handleLastNameChange(e) {
     setPlayer({
+      ...player,
       lastName: e.target.value
     });
   }
