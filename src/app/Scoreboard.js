@@ -10,9 +10,9 @@ export default function Scoreboard() {
 
   function handlePlusClick() {
     
-    setPlayer(prev => ({
-      ...prev,
-      score: prev.score + 1
+    setPlayer(({
+      ...player,
+      score: player.score + 1
     }));
   }
 
