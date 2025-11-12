@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Canvas from "./Canvas";
+import Scoreboard from "./Scoreboard";
 
 export default function Home() {
   return (

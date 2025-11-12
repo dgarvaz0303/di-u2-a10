@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 import Background from './Background.js';
 import Box from './Box.js';

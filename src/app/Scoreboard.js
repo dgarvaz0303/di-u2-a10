@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 
 export default function Scoreboard() {
@@ -8,7 +9,11 @@ export default function Scoreboard() {
   });
 
   function handlePlusClick() {
-    player.score++;
+    
+    setPlayer(prev => ({
+      ...prev,
+      score: prev.score + 1
+    }));
   }
 
   function handleFirstNameChange(e) {
