@@ -20,8 +20,10 @@ export default function Canvas() {
   }
 
   function handleColorChange(e) {
+    shape.position.x = 0;
+    shape.position.y = 0;
     setShape({
-      ...shape,
+      position: initialPosition,
       color: e.target.value
     });
   }
